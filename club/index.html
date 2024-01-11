@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="css/styles.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+   <!-- <header>
+        <div class="logo">'
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="41" viewBox="0 0 83 41">
+                <text id="röche" transform="translate(0 34)" font-size="36" font-family="F37Judge-Bold, F37 Judge" font-weight="700"><tspan x="0" y="0">RÖCHE</tspan></text>
+            </svg>
+        </div>
+        <div class="nav"> 
+        <nav>
+            <a href="javascript:void(0);" class="icon" onclick="sidebar()">
+                <span><i class="material-icons">menu</i></span>
+            </a>
+        <ul>
+            <li><a href="#"class="active">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul> 
+        </nav>
+    </div>
+    </header>-->
+    <main>
+        
+        <div class="logo"> <img src="../1x/SVG/Asset 1.svg" alt=""></div>
+        <div class="wrapper">
+            <h1>Registration</h1>
+         <form action="" onsubmit="return validate()">
+            
+            <div class="field">
+                <label for="name">Name <input type="text" id="name" class="input" autocomplete="name" required></label>
+            </div>
+            <div class="field">
+                <label for="email">Email address <input type="email" id="email" class="input" autocomplete="email" ></label>
+            </div>
+            <div class="field">
+                <label for="phone">Telegram number<input type="tel" id="phone" class="input"  autocomplete="tel" required></label>
+                </div>
+                <div class="field">
+                    <label for="mat">Matric Number <input type="text" id="mat" class="input" autocomplete="mat" required></label>
+                </div>
+                <div class="field">
+                    <label for="program">Program <input type="text" id="program" class="input" autocomplete="program" required></label>
+                </div>
+                <div class="field">
+                    <label for="birthday">Date of Birth <input type="date" id="birthday" class="input" autocomplete="birthday" required></label>
+                </div>
+                <div class="field">
+                        <label for="level">Level<br>
+                          <select name="level" class="input drop-down" id="level">
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="300">300</option>
+                            <option value="400">400</option>
+                            <option value="500">500</option>
+                          </select>
+                        </label>
+                </div>
+            <div class="field">
+                <label for="referrer">
+                    How did you hear about us<br>
+                    <select name="referrer" id="referrer" class="input drop-down" onclick=" other_refer(this.value)" required>
+                        <option value="">Select</option>
+                        <option value="Friends/Family">Friends/Family</option>
+                        <option value="Search_Engine">Search Engine</option>
+                        <option value="Online_advertisement">Online advertisement</option>
+                        <option value="Billboard">Billboard</option>
+                        <option value="Social_media">Social media</option>
+                        <option value="Chapel">Commercial</option>
+                        <option value="Others">Others</option>
+                    </select>
+                   <label for="other_ref"> <input type="text" id="other_ref" class="input hidden"  placeholder="other referrer" on></label>
+                </label>
+            </div>
+            <div class="field"><label for="comments">
+                Reason for joining
+                <br><textarea name="comments" id="comments" cols="30" rows="10" class="input" placeholder="type here" required></textarea>
+            </div></label>
+            
+                
+                <input type="submit" value="Submit">
+         </form>
+        </div>
+    </main>
+
+        </div>
+        <div class="small">Copyright © 2023</div>
+    </footer>
+<script src="app.js"></script>
+
+</body>
+</html>
